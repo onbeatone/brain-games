@@ -11,16 +11,16 @@ const runGame = (gameDescription, getRoundData) => {
   for (let i = 0; i < roundsCount; i += 1) {
     const { question, correctAnswer } = getRoundData();
 
-    console.log(`Question: ${question}`);
+    console.log(`Pregunta: ${question}`);
 
-    const userAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Tu respuesta: ');
 
     if (userAnswer !== correctAnswer) {
       console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+        `'${userAnswer}' Incorrecto! :( La respuesta correcta era '${correctAnswer}'.`,
       );
 
-      console.log(`Let's try again, ${userName}!`);
+      console.log(`Intenta de nuevo, ${userName}!`);
 
       return;
     }
@@ -28,7 +28,7 @@ const runGame = (gameDescription, getRoundData) => {
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Felicidades!!!, ${userName}!`);
 };
 
 export default runGame;
