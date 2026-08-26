@@ -20,15 +20,15 @@ const runGame = (gameDescription, getRoundData) => {
         `'${userAnswer}' Incorrecto! :( La respuesta correcta era '${correctAnswer}'.`,
       );
 
-      console.log(`Intenta de nuevo, ${userName}!`);
+      console.log(`Intentémoslo de nuevo, ${userName}!`);
 
       return;
     }
 
-    console.log('Correct!');
+    console.log('Correcto!');
   }
 
-  console.log(`Felicidades!!!, ${userName}!`);
+  console.log(`¡Felicidades, ${userName}!`);
 };
 
 export default runGame;
