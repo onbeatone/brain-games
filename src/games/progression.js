@@ -3,8 +3,10 @@ import runGame from '../index.js';
 const gameDescription = '¿Qué número falta en la progresión?';
 
 const PROGRESSION_LENGTH = 10;
+
 const MIN_START = 1;
 const MAX_START = 20;
+
 const MIN_STEP = 1;
 const MAX_STEP = 10;
 
@@ -22,6 +24,7 @@ const generateProgression = (start, step, length) => (
 const getRoundData = () => {
   const start = getRandomNumber(MIN_START, MAX_START);
   const step = getRandomNumber(MIN_STEP, MAX_STEP);
+
   const progression = generateProgression(
     start,
     step,

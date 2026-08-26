@@ -27,8 +27,6 @@ export default defineConfig([
   {
     ignores: [
       'node_modules/**',
-      'coverage/**',
-      'dist/**',
     ],
   },
 ]);
